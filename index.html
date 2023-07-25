@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/08754d7361.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="/Images/logo-removebg-preview.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>web-Developer</p>
+                <h1>Hey, I'm <span> Nikita Lohiya</span> and i am specialize in front-end development, proficient in
+                    HTML, CSS, and
+                    JavaScript. <br>I have a strong understanding of responsive design principles, ensuring that
+                    websites I
+                    create are visually appealing and optimized for various devices and screen sizes.</h1>
+
+            </div>
+        </div>
+    </div>
+
+    <!-----About Section ------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="Images/about.png" class="img">
+                </div>
+
+                <div class="about-col2">
+                    <h1 class="sub-title">About Me </h1>
+                    <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, officiis
+                        assumenda est,
+                        similique itaque voluptatum quos, enim veritatis distinctio perferendis ipsa minus. Nam dolores,
+                        recusandae accusamus voluptatibus optio rem dignissimos!</p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <div class="skill-bar">
+                            <div class="info">
+                                <p>HTML</p>
+                                <p class="percent">90%</p>
+                            </div>
+                            <div class="bar">
+                                <span class="html"></span>
+                            </div>
+                        </div>
+
+
+
+
+
+                        <div class="skill-bar">
+                            <div class="info">
+                                <p>CSS</p>
+                                <p class="percent">90%</p>
+                            </div>
+                            <div class="bar">
+                                <span class="css"></span>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar">
+                            <div class="info">
+                                <p>Java-Script</p>
+                                <p class="percent">80%</p>
+                            </div>
+                            <div class="bar">
+                                <span class="js"></span>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar">
+                            <div class="info">
+                                <p>React-js</p>
+                                <p class="percent">70%</p>
+                            </div>
+                            <div class="bar">
+                                <span class="react-js"></span>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="info">
+                                <p>Angular</p>
+                                <p class="percent">50%</p>
+                            </div>
+                            <div class="bar">
+                                <span class="angular"></span>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar">
+                            <div class="info">
+                                <p>Java</p>
+                                <p class="percent">90%</p>
+                            </div>
+                            <div class="bar">
+                                <span class="java"></span>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar">
+                            <div class="info">
+                                <p>C++</p>
+                                <p class="percent">80%</p>
+                            </div>
+                            <div class="bar">
+                                <span class="c"></span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-----experience ----->
+                    <div class="tab-contents" id="experience">
+                        <h2>Anand Rathi Corporation </h2>
+                        <p>Web Developement Internship ,2023 May - July 2023</p>
+                    </div>
+
+                    <!------Education-->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li> Lucky institute of professional studies (BCA)</li>
+                            <li> Lucky institute of professional studies (BCA)</li>
+
+                        </ul>
+                    </div </div>
+                </div>
+            </div>
+        </div>
+
+        <!-------Services------>
+        <div id="services"></div>
+        <div class="container">
+            <h1 class="sub-title2">My Services </h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, iure q</p>
+                    <a href="#">Read More</a>
+
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/ UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, iure q</p>
+                    <a href="#">Read More</a>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!------portfolio------->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title3">My Work </h1>
+                <div class="work-list">
+                <div class="work">
+                    <img src="Images/cd.jpg">
+                    <div class="layer">
+                        <h3>Count-down timer </h3>
+                        <p>The countdown timer tracks the amount of time till the specified event.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="Images/whether app.png">
+                    <div class="layer">
+                        <h3>Whether Forcasting  </h3>
+                        <p>offers accurate weather data and alerts.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="Images/notes_app.jpg">
+                    <div class="layer">
+                        <h3>Note-Making </h3>
+                        <p>Note-making is a process of creating a record of important details from sources such as passages, paragraphs.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+</div>
+            </div>
+        </div>
+
+
+<!-------Contact----------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title1">Contact Me</h1>
+               
+                <p class="pa"><i class="fa-solid fa-phone"></i>1234567890</p>
+                <p class="pa"> <i class="fa-solid fa-envelope"></i>nikitalohiya@gmail.com</p>
+                <div class="social-icone">
+                    <a href="https://linkedin.com"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <a href="Images/Nikita's Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text"name="Name" placeholder="Your Name "required>
+                    <input type="email"name="Email" placeholder="Your Email "required>
+                    <input type="number"name="Number" placeholder="Your Number "required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn1 btn2">Submit</button>
+                    
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>©2023 India, All right reserved. Made with <i class="fa-solid fa-heart"></i> </p>
+    </div>
+</div>
+
+
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+
+                }
+
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu()
+            {
+                sidemenu.style.right="0";
+            }
+            function closemenu()
+            {
+                sidemenu.style.right="-200px"
+            }
+        </script>
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby10ji-KsKE1SDUhRvXNTKAA2vio0KHFLsRgbkMV2r3qrEdk3y7omgKypPJ_hPMCjhN2Q/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+            msg.innerHTML = "Messages Sent Successfully!!"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
